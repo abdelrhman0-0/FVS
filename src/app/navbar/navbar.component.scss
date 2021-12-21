@@ -1,0 +1,32 @@
+
+$main:#4171A1;
+nav{
+    box-shadow:  0 .125rem 0.8rem rgba(#000, .1);
+    a{
+        transition: all 0.4s;
+        margin-left: 15px;
+        &:hover{
+            color:$main  !important;
+        }
+    }
+    .navbar-toggler{
+        border: none !important;
+        font-size: 1.5rem;
+        &:focus{
+            box-shadow: none !important;
+        }
+    }
+    .fa-bars{
+        color: $main;
+        
+    }
+}
+.navbar-brand{
+    font-size: 1.7rem;
+    color: $main !important;
+}
+
+.active{
+    color: #4171A1 !important;
+}
+

@@ -1,0 +1,39 @@
+   <nav class="navbar navbar-expand-lg navbar-light mb-5 bg-white fixed-top ">
+       <div class="container">
+           <a class="navbar-brand">Future Vision Software</a>
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+           data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+           aria-label="Toggle navigation">
+           <i class="fas fa-bars"></i>
+       </button>
+           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                   
+                   <li class="nav-item">
+                       <a *ngIf="isLogged" class="nav-link " routerLinkActive="active"  routerLink="/charts" >Charts</a>
+                   </li>
+                   
+
+
+
+
+
+                   <li class="nav-item">
+                       <a *ngIf="isLogged" class="nav-link" routerLinkActive="active" routerLink="/maps" >Maps</a>
+                   </li>
+                   <li class="nav-item">
+                       <a *ngIf="!isLogged" class="nav-link" routerLinkActive="active" routerLink="/login" >Login</a>
+                   </li>
+                   <li class="nav-item">
+                       <a *ngIf="isLogged" class="nav-link" routerLinkActive="active" routerLink="/login"(click)="logOut()" >Logout</a>
+                   </li>
+                  
+               </ul>
+           </div>
+       </div>
+   </nav>
+
+
+
+
+   

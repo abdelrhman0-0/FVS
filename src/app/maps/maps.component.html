@@ -1,0 +1,17 @@
+<section>
+  
+    
+    <div class="my-5 pt-5">
+
+      <agm-map [zoom]="zoom" [latitude]="lat" [longitude]="lng">
+        <agm-marker *ngFor="let item of parsedData" 
+         [latitude]="item.lat" 
+         [longitude]="item.lng"
+         >
+      
+        </agm-marker>
+      </agm-map>
+    </div>
+      
+      
+</section>
